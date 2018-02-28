@@ -10,7 +10,7 @@
 ##    Couchbase Routine Backup
 ## --
 ## Created : <2017-02-24>
-## Updated: Time-stamp: <2018-02-28 15:08:39>
+## Updated: Time-stamp: <2018-02-28 15:13:03>
 ##-------------------------------------------------------------------
 import argparse
 import os, sys
@@ -43,7 +43,7 @@ log.addHandler(Rthandler)
 ################################################################################
 # Critical Configuration
 # Sample:
-#   python cb_backup.py --username $MYUSERNAME --password $MYPASSWD --cbserver http://127.0.0.1.8091
+#   python cb_backup.py --username $MYUSERNAME --password $MYPASSWD --cbserver http://127.0.0.1:8091 --bucket_list bucket1,bucket,bucket3
 parser = argparse.ArgumentParser()
 parser.add_argument('--username', default='Administrator', required=True,
                     help="username of couchbase", type=str)
