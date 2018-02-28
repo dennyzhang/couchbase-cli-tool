@@ -7,4 +7,6 @@
 # python-couchbase-tool
 Python tools for couchbase
 
+- [cb_backup.py](cb_backup.py): Routine backup
+
 Code is licensed under [MIT License](https://www.dennyzhang.com/wp-content/mit_license.txt).
